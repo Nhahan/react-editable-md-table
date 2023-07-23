@@ -1,0 +1,45 @@
+{
+  "name": "react-markdown-table",
+  "version": "1.0.0",
+  "description": "React component library for generating and previewing markdown tables",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepack": "npm run build",
+    "build": "rm -rf dist && mkdir dist && tsc && cp ./src/index.css ./dist && cp ./src/CopyIcon.svg ./dist"
+  },
+  "keywords": [
+    "markdown table",
+    "table component",
+    "preview",
+    "copy",
+    "table generator",
+    "react component",
+    "copy button",
+    "simple"
+  ],
+  "author": "Nhahan",
+  "license": "MIT",
+  "dependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  },
+  "browser": "./browser/specific/main.js",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
