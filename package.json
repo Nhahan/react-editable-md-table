@@ -1,13 +1,13 @@
 {
   "name": "react-table-io",
   "version": "1.0.0",
-  "description": "React component library for generating and previewing markdown tables",
+  "description": "React component library for generating and previewing table.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "start": "react-scripts start",
     "prepack": "npm run build",
-    "build": "rm -rf dist && mkdir dist && tsc && cp ./src/index.css ./dist && cp ./src/CopyIcon.svg ./dist"
+    "build": "rm -rf dist && mkdir dist && tsc && cp ./src/lib/index.css ./dist && cp src/lib/CopyIcon.svg ./dist"
   },
   "keywords": [
     "table.io",
