@@ -1,9 +1,12 @@
 import React from 'react';
+import EditableMdTable from "./lib/EditableMdTable";
 
 const App = () => {
+    const [data, setData] = React.useState([['', '', '']]);
+
     return (
         <div>
-            test
+            <EditableMdTable data={data} setData={setData} />
         </div>
     );
 }
